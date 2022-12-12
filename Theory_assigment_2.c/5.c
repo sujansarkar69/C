@@ -1,7 +1,6 @@
 #include <stdio.h>
 int add_three_nums(int a, int b, int c)
 {
-    c = 0;
     return a + b + c;
 }
 int main()
@@ -9,4 +8,5 @@ int main()
     int x, y;
     scanf("%d %d", &x, &y);
     printf("%d", add_three_nums(x, y, 0));
+    return 0;
 }
