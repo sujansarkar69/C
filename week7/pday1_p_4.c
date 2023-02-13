@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 void print_1toN(int n)
 {
     if (n > 0)

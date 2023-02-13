@@ -14,7 +14,7 @@ int main()
     while (n--)
     {
         scanf("%d", &x);
-        if (!(sqrt(x)))
+        if (sqrt(x)!=1)
         {
             x += 1;
         }

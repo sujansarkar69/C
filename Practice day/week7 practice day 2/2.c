@@ -2,9 +2,7 @@
 
 void swap(int *x, int n)
 {
-    // int temp = *x;
-    // *x = *y;
-    // *y = temp;
+
     for (int i = 0; i < n; i++)
     {
         printf("%d ", *(x + i));

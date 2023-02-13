@@ -2,7 +2,7 @@
 int main()
 {
     char str[50];
-    scanf("%s", str);
+    scanf("%s",str);
     int n = strlen(str), largestElement = 26;
     int freq[largestElement + 1];
     for (int i = 0; i <= largestElement; i++)
@@ -22,6 +22,7 @@ int main()
         }
     }
 
+    
     int nxt = 0;
     while (nxt != total)
     {
@@ -29,12 +30,12 @@ int main()
         char ch;
         for (int i = 1; i <= 26; i++)
         {
-            // if (freq[i] > max)
-            //{
-           // max = freq[i];
-            ch = i + 96;
-            index = i;
-            //}
+            if (freq[i] > max)
+            {
+                max = freq[i];
+                ch = i + 96;
+                index = i;
+            }
         }
         for (int i = 0; i <= max; i++)
         {

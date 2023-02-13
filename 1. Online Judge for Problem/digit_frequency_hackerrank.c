@@ -6,7 +6,7 @@
 int main()
 {
     char str[1000];
-    int i, arr[9]={0};
+    int i, arr[10] = {0};
     scanf("%s", str);
     int len = strlen(str);
 

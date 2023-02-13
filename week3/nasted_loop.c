@@ -7,7 +7,6 @@ int main()
     for(i=1;i<=5;i++)
     {
         printf("Enter marks of %dth student: ",i);
-        //printf("\n");
         for(j=1;j<=3;j++)
         {
             scanf("%f",&x);

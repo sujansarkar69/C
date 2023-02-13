@@ -84,35 +84,35 @@ int main(void)
 
     display_foods(food_items, n);
 
-    // int ordered_food[100];
-    // int idx = 0;
+    int ordered_food[100];
+    int idx = 0;
 
-    // printf("order your food by enter food_code or enter 0 for exit: ");
+    printf("order your food by enter food_code or enter 0 for exit: ");
 
-    // int food_code;
-    // while (scanf("%d", &food_code))
-    // {
-    //     if (food_code == 0)
-    //         break;
-    //     display_foods(food_items, n);
+    int food_code;
+    while (scanf("%d", &food_code))
+    {
+        if (food_code == 0)
+            break;
+        display_foods(food_items, n);
 
-    //     while (check_food_code(food_items, n, food_code) == false)
-    //     {
-    //         printf("Invalid food code, Please try again \n");
-    //         printf("order your food by enter food_code or enter 0 for exit: ");
-    //         scanf("%d", &food_code);
+        while (check_food_code(food_items, n, food_code) == false)
+        {
+            printf("Invalid food code, Please try again \n");
+            printf("order your food by enter food_code or enter 0 for exit: ");
+            scanf("%d", &food_code);
 
-    //         if (food_code == 0)
-    //             break;
-    //     }
-    //     if (food_code == 0)
-    //         break;
-    //     if (check_food_code(food_items, n, food_code) == true)
-    //     {
-    //         ordered_food[idx] = food_code;
-    //         idx++;
-    //     }
-    //     printf("order your food by enter food_code or enter 0 for exit: ");
-    // }
-    // display_ordered_food(food_items, n, ordered_food, idx);
+            if (food_code == 0)
+                break;
+        }
+        if (food_code == 0)
+            break;
+        if (check_food_code(food_items, n, food_code) == true)
+        {
+            ordered_food[idx] = food_code;
+            idx++;
+        }
+        printf("order your food by enter food_code or enter 0 for exit: ");
+    }
+    display_ordered_food(food_items, n, ordered_food, idx);
 }
